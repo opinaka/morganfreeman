@@ -7,11 +7,23 @@
     <title>Morgan Freeman - Présentation à 360°</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Ajoutez ce style pour rendre la navbar sticky */
+        .sticky-top {
+            position: sticky;
+            top: 0;
+            z-index: 1020; /* Assurez-vous que la navbar reste au-dessus du contenu */
+        }
+        /* Ajuster les marges des sections pour éviter le masquage */
+        section {
+            padding-top: 100px; /* Ajouter un padding en haut pour que les sections ne soient pas masquées */
+        }
+    </style>
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Morgan Freeman</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,14 +54,7 @@
         </div>
     </nav>
 
-    <!-- Header Section -->
-    <header class="bg-dark text-white text-center py-5">
-        <div class="container">
-            <h1 class="display-4">Morgan Freeman</h1>
-            <p class="lead">Un voyage à 360° dans la vie d'une légende</p>
-        </div>
-    </header>
-
+    <!-- Sections de la landing page -->
     <!-- Section: Biographie -->
     <section id="biographie" class="py-5">
         <div class="container">
@@ -66,98 +71,7 @@
         </div>
     </section>
 
-    <!-- Section: Filmographie -->
-    <section id="filmographie" class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Filmographie</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Film 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Les Évadés (1994)</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Film 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Million Dollar Baby (2004)</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Film 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Invictus (2009)</h5>
-                        </div>
-                    </div>
-                </div>
-                <!-- Ajoute plus de films ici -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Section: Galerie Multimédia -->
-    <section id="galerie" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Galerie Multimédia</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="https://via.placeholder.com/300x300" class="img-fluid rounded mb-3" alt="Image 1">
-                </div>
-                <div class="col-md-4">
-                    <img src="https://via.placeholder.com/300x300" class="img-fluid rounded mb-3" alt="Image 2">
-                </div>
-                <div class="col-md-4">
-                    <img src="https://via.placeholder.com/300x300" class="img-fluid rounded mb-3" alt="Image 3">
-                </div>
-                <!-- Ajoute plus d'images ici -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Section: Philanthropie -->
-    <section id="philanthropie" class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Philanthropie</h2>
-            <p class="text-center">Morgan Freeman s'investit activement dans plusieurs causes humanitaires, notamment en matière d'éducation et de justice sociale.</p>
-            <!-- Ajoute plus d'infos sur ses projets philanthropiques ici -->
-        </div>
-    </section>
-
-    <!-- Section: Actualités -->
-    <section id="actualites" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Actualités</h2>
-            <p class="text-center">Suivez les dernières actualités concernant Morgan Freeman, ses projets futurs, et ses interventions publiques.</p>
-            <!-- Ajoute des flux d'actualités ou des liens ici -->
-        </div>
-    </section>
-
-    <!-- Section: Contact -->
-    <section id="contact" class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Contact</h2>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nom :</label>
-                    <input type="text" class="form-control" id="name" name="name">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email :</label>
-                    <input type="email" class="form-control" id="email" name="email">
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message :</label>
-                    <textarea class="form-control" id="message" name="message" rows="4"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Envoyer</button>
-            </form>
-        </div>
-    </section>
+    <!-- Ajoutez les autres sections ici... -->
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
